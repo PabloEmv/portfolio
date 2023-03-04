@@ -4,8 +4,8 @@ import logoPm from '../assets/img/logoPm.png'
 const Navbar = () => {
 
   return (
-    <>
-      <div className="navbar bg-base-100 h-24 px-10">
+    <div className="flex justify-center sticky z-50 top-0">
+      <div className="navbar bg-gray-700 h-20 sm:px-10 mx-1 sm:mx-3 rounded-b-lg">
         <div className="navbar-start">
           <img className="h-16" src={logoPm} alt="logo" />
         </div>
@@ -14,7 +14,7 @@ const Navbar = () => {
           <Link className="btn" to='https://drive.google.com/uc?export=download&id=1pLbB4N9YAC3zttENRs1_jm3HC1cUGsxE' target='_blank'>Dscargar CV</Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

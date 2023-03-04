@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CheckedSkills = ({name, color}) => {
+  const [isChecked, setIsChecked] = useState(true);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(isChecked);
+  }
+
   return (
     <div className="flex flex-col">
-      <span>{name}</span>
-      <input type="checkbox" ckecked className={`toggle ${color}`} checked />
+      <span className="font-bold">{name}</span>
+      <input 
+        type="checkbox" 
+        className={`toggle ${color}`} 
+        checked={isChecked} 
+        onChange={handleCheckboxChange}
+      />
     </div>
   );
 };
