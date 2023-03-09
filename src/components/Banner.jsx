@@ -19,9 +19,7 @@ const Banner = () => {
           desarrollador full stack
         </h2>
         <h1 className="text-xl xl:text-3xl 2xl:text-4xl font-bold">
-          Me especializo en el Frontend, en mi portafolio encontrarás algunos de
-          mis proyectos más recientes, donde pongo en práctica mi habilidad para
-          crear diseños increíbles y experiencias de usuario intuitivas.
+          Me especializo en el Frontend, con experiencia en crear aplicaciones web dinámicas y responsivas. En mi portafolio podrá ver algunos de mis proyectos más recientes, donde demuestro mi habilidad para utilizar diferentes tecnologías y herramientas. 
         </h1>
         <div className="mt-5 lg:mt-12">
           <Link to="mailto:pablo.ed.martinez@gmail.com">
