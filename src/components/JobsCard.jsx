@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 const JobsCard = ({ cardImg, tech1, tech2, tech3, link, description }) => {
   return (
-    <Link to={link} target="_blank">
-      <div className="card mx-4 sm:mx-2 my-5 shadow-xl border dark:border-gray-700 cursor-pointer w-auto hover:shadow-gray-400 dark:hover:shadow-gray-700">
+    
+      <div className="card mx-4 sm:mx-2 my-5 shadow-sm bg-white dark:bg-gray-800 dark:shadow-gray-800 w-auto hover:shadow-lg hover:shadow-white dark:hover:shadow-gray-800">
+        <Link to={link} target="_blank">
         <figure>
-          <img src={cardImg} alt="app del tiempo" />
+          <img src={cardImg} alt="app del tiempo" className="rounded-t-xl" />
         </figure>
         <div className="p-2">
           <h2 className="card-title flex flex-wrap">
@@ -20,8 +21,9 @@ const JobsCard = ({ cardImg, tech1, tech2, tech3, link, description }) => {
           </h2>
           <h3 className="text-lg">{description}</h3>
         </div>
+        </Link>
       </div>
-    </Link>
+    
   );
 };
 
