@@ -3,7 +3,7 @@ import CheckedSkills from "./CheckedSkills";
 
 const About = () => {
   return (
-    <div className="w-full bg-base-100 md:inline-flex sm:px-10 lg:px-20 2xl:px-40 mt-20 sm:mt-32">
+    <div className="w-full dark:bg-gray-800 md:inline-flex sm:px-10 lg:px-20 2xl:px-40 mt-20 sm:mt-32">
       <figure>
         <img
           className="w-full sm:mr-60 xl:mr-96"
